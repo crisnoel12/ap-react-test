@@ -1,0 +1,303 @@
+/* BASE STYLES  */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #354052;
+}
+
+a {
+  color: #fff;
+}
+
+input {
+  border: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+hr {
+  margin-top: 70px;
+}
+
+.input.is-danger,
+.textarea.is-danger {
+  border-color: #ff3860 !important;
+}
+
+#flash-msg {
+  padding: 35px;
+  background-color: #22C65B;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  min-width: 200px;
+}
+
+/* STYLE GUIDE */
+
+.dark-slate-blue {
+  background-color: #1e3656;
+}
+
+.light-sage {
+  background-color: #f1faef;
+}
+
+.faded-red {
+  background-color: #e43c4b;
+}
+
+.gray {
+  color: #d8d8d8;
+}
+
+.dull-blue {
+  background-color: #487b9b;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 50px;
+  color: #fff;
+  letter-spacing: 0.6px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #e43c4b;
+  letter-spacing: 0.4px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #272727;
+  letter-spacing: 0.3px;
+}
+
+h4 {
+  font-size: 20px;
+  color: #272727;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+h5 {
+  font-size: 18px;
+  color: #413d3d;
+  letter-spacing: 0.2px;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 1.3;
+}
+
+caption {
+  font-weight: 500;
+  color: #7c7c7c
+}
+
+
+/* NAVBAR STYLES */
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+}
+
+.navbar-brand a {
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  color: white;
+}
+
+.navbar a:hover,
+.user-func-nav a:hover,
+.user-func-nav a.is-active {
+  color: white;
+  text-decoration: underline;
+}
+
+.navbar-menu.is-active {
+  background-color: #1e3656;
+}
+
+
+/* LANDING PAGE STYLES */
+
+.hero {
+  background-image: url('./assets/onboarding-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.hero.is-landing {
+  background-image: url('./assets/banner.png');
+}
+
+.sub-heading {
+  margin-bottom: 40px;
+}
+
+.topic-heading {
+  margin-bottom: 10px;
+}
+
+#landing-sec-one {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.maui {
+  padding-bottom: 0px;
+}
+
+.desc {
+  margin-top: 15px;
+}
+
+.desc table{
+  width: 100%;
+}
+
+.sub-form input[type="email"] {
+  padding: 10px 10px 10px 20px;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 100%;
+  height: 60px;
+}
+
+.sub-form .sub-btn {
+  height: 60px;
+  width: 125px;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  right: -20px;
+}
+
+.my-footer,
+.sub-btn {
+  color: white;
+}
+
+.user-func-nav {
+  margin-bottom: 20px;
+}
+
+.user-func-nav a {
+  margin-right: 40px;
+  font-size: 18px;
+}
+
+.user-func-form input {
+  height: 25px;
+  width: 250px;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  box-sizing: content-box;
+}
+
+.user-func-form input:not([type="submit"]) {
+  display: block;
+  background-color: rgba(121, 135, 149, .5);
+  margin-bottom: 20px;
+  padding-left: 50px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 5% center;
+}
+
+.user-func-form span{
+  display: block;
+  margin-top: -15px;
+  margin-bottom: 5px;
+}
+
+.user-func-form input[type="submit"] {
+  margin-top: 15px;
+  width: 285px;
+}
+
+input[name="username"] {
+  background-image: url('./assets/ic-username.png');
+}
+
+input[name="email"] {
+  background-image: url('./assets/ic-email.png');
+}
+
+input[name="password"] {
+  background-image: url('./assets/ic-password.png');
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #d8d8d8;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #d8d8d8;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #d8d8d8;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #d8d8d8;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+  #landing-sec-two {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .is-200x200-tab {
+    height: 180px !important;
+    width: 180px !important;
+  }
+  .maui .container {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #what-we-do {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-70%);
+  }
+}
+
+@media screen and (min-width: 1408px) {
+  #landing-sec-two .media {
+    padding: 0 5.5rem;
+  }
+}
